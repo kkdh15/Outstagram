@@ -9,8 +9,8 @@ class complete : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_complete)
 
-        if(intent.hasExtra("msg")){
-            textView11.setText(intent.getStringExtra("msg"))
+        if(intent.hasExtra("id")){
+            textView11.setText(intent.getStringExtra("id"))
         }
     }
 }

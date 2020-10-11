@@ -13,8 +13,11 @@ class Signup_pw : AppCompatActivity() {
         setContentView(R.layout.activity_signup_pw)
 
         btn_next2.setOnClickListener{
-            val intent_pw = Intent(this, complete::class.java)
-            startActivity(intent_pw)
+            if(intent.hasExtra("id")) {
+                val intent_pw = Intent(this, complete::class.java)
+                intent_pw.putExtra("id",intent.getStringExtra("id"))
+                startActivity(intent_pw)
+            }
         }
     }
 }
