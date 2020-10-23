@@ -72,7 +72,7 @@
         android:layout_marginLeft="68dp"
         android:text="Save login info"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup_pw" />
 
     <Button
         android:id="@+id/btn_login"
@@ -87,7 +87,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_pw" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_signup_pw" />
 
     <TextView
         android:id="@+id/textView2"
@@ -124,7 +124,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/tv_pw"
+        android:id="@+id/tv_signup_pw"
         android:layout_width="300dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"

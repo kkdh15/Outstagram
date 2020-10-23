@@ -14,10 +14,10 @@ class Signup_name : AppCompatActivity() {
         setContentView(R.layout.activity_signup_name)
         btn_next1.setOnClickListener{
             val intent_id = Intent(this, Signup_pw::class.java)
-            intent_id.putExtra("id",tv_username.text.toString())
+            intent_id.putExtra("id",tv_signup_pw.text.toString())
             startActivity(intent_id)
         }
-        tv_username.addTextChangedListener(object : TextWatcher {
+        tv_signup_pw.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(p0: Editable?) {
                 btn_next1.setBackgroundColor(Color.BLUE)
                 btn_next1.setEnabled(true)
